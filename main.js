@@ -1,4 +1,5 @@
-import taskBlock from './0x00-ES6_basic/1-block-scoped.js';
+import getNeighborhoodsList from './0x00-ES6_basic/2-arrow';
 
-console.log(taskBlock(true));
-console.log(taskBlock(false));
+const neighborhoodsList = new getNeighborhoodsList();
+const res = neighborhoodsList.addNeighborhood('Noe Valley');
+console.log(res);
