@@ -1,8 +1,4 @@
-import asyncUploadUser from "./0x01-ES6_promise/100-await";
+import ClassRoom from "./0x02-ES6_classes/0-classroom";
 
-const test = async () => {
-    const value = await asyncUploadUser();
-    console.log(value);
-};
-
-test();
+const room = new ClassRoom(10);
+console.log(room._maxStudentsSize)
