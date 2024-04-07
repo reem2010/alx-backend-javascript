@@ -1,13 +1,5 @@
-import Building from './0x02-ES6_classes/5-building';
+import Airport from "./0x02-ES6_classes/7-airport";
 
-const b = new Building(100);
-console.log(b);
-
-class TestBuilding extends Building {}
-
-try {
-    new TestBuilding(200)
-}
-catch(err) {
-    console.log(err);
-}
+const airportSF = new Airport('San Francisco Airport', 'SFO');
+console.log(airportSF);
+console.log(airportSF.toString());
