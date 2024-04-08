@@ -1,11 +1,14 @@
-import listOfStudents from "./0x02-ES6_classes/9-hoisting";
-import {StudentHolberton, HolbertonClass} from "./0x02-ES6_classes/9-hoisting"
-console.log(listOfStudents);
+import Car from "./0x02-ES6_classes/10-car";
 
-const listPrinted = listOfStudents.map(
-    student => student.fullStudentDescription
-);
+class TestCar extends Car {}
 
-console.log(listPrinted)
-console.log(listOfStudents[0] instanceof StudentHolberton)
-console.log(listOfStudents[0].holbertonClass instanceof HolbertonClass)
+const tc1 = new TestCar("Nissan", "Turbo", "Pink");
+const tc2 = tc1.cloneCar();
+
+console.log(tc1);
+console.log(tc1 instanceof TestCar);
+
+console.log(tc2);
+console.log(tc2 instanceof TestCar);
+
+console.log(tc1 == tc2);
