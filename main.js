@@ -1,3 +1,3 @@
-import createInt8TypedArray from "./0x03-ES6_data_manipulation/5-typed_arrays";
+import setFromArray from "./0x03-ES6_data_manipulation/6-set";
 
-console.log(createInt8TypedArray(10, 2, 89))
+console.log(setFromArray([12, 32, 15, 78, 98, 15]));
