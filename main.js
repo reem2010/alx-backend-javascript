@@ -1,5 +1,8 @@
-import getStudentsByLocation from "./0x03-ES6_data_manipulation/2-get_students_by_loc.js";
+import updateStudentGradeByCity from "./0x03-ES6_data_manipulation/4-update_grade_by_city.js";
 import getListStudents from "./0x03-ES6_data_manipulation/0-get_list_students.js";
-const students = getListStudents();
 
-console.log(getStudentsByLocation(students, 'San Francisco'));
+
+console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }, { studentId: 1, grade: 86 }]));
+
+console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }]));
+
