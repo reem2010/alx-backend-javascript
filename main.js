@@ -1,3 +1,5 @@
-import setFromArray from "./0x03-ES6_data_manipulation/6-set";
+import hasValuesFromArray from "./0x03-ES6_data_manipulation/7-has_array_values";
 
-console.log(setFromArray([12, 32, 15, 78, 98, 15]));
+console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [1]));
+console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [10]));
+console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [1, 10]));
