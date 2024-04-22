@@ -5,7 +5,7 @@ function createInt8TypedArray(length, position, value) {
     throw Error('Position outside range');
   }
   int8[position] = value;
-  return buf;
+  return new DataView(buf);
 }
 
 export default createInt8TypedArray;
