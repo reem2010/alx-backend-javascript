@@ -8,7 +8,7 @@ function cleanSet(set, startString) {
     return res;
   }
   const array = Array.from(set).filter(
-    (ele) => ele.startsWith(startString),
+    (ele) => ele && ele.startsWith(startString),
   ).map(
     (ele) => ele.slice(ind),
   );
