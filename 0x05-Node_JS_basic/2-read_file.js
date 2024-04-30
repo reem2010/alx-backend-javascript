@@ -6,7 +6,7 @@ function countStudents(url) {
   try {
     data = fs.readFileSync(url, 'utf8');
   } catch (err) {
-    throw Error('Cannot load the database');
+    throw new Error('Cannot load the database');
   }
   data = data.split('\n').slice(1);
 
@@ -28,4 +28,4 @@ function countStudents(url) {
     );
   });
 }
-countStudents('database.csv');
+module.exports = countStudents;
