@@ -5,7 +5,8 @@ function countStudents(url) {
     const res = {};
     fs.readFile(url, 'utf8', (err, data1) => {
       if (err) {
-        return rej(new Error('Cannot load the database'));
+        rej(new Error('Cannot load the database'));
+        return;
       }
       let data = data1.split('\n').slice(1);
       data = data.filter((val) => val);
