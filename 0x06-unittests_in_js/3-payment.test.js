@@ -1,7 +1,7 @@
 const expect = require("chai").expect;
 const sendPaymentRequestToApi = require("./3-payment");
 const sinon = require("sinon")
-const Utils = require("utilS")
+const Utils = require("./utilS")
 
 describe('sendPaymentRequestToApi', function() {
   it('spy on calculate num', function(){
