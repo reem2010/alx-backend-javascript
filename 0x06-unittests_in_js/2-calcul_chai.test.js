@@ -1,8 +1,5 @@
-import chai from 'chai';
-const {describe, it} = require("mocha");
+const expect = require("chai").expect;
 const calculateNumber = require("./2-calcul_chai");
-
-const expect = chai.expect;
 
 describe('rounded sum test', function() {
   it('first', function(){
