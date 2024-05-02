@@ -1,7 +1,7 @@
 const chai = require("chai");
-const expect = chai.expect;
-const assert = require('assert');
 const calculateNumber = require('./2-calcul');
+
+const expect = chai.expect;
 
 describe('rounded sum test', function() {
   it('first', function(){
