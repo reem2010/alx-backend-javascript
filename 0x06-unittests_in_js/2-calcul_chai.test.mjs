@@ -1,5 +1,6 @@
-const chai = require("chai");
-const calculateNumber = require('./2-calcul');
+import chai from 'chai';
+const {describe, it} = require("mocha");
+const calculateNumber = require("./2-calcul_chai");
 
 const expect = chai.expect;
 
