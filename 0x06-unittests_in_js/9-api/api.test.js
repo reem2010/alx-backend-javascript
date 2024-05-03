@@ -15,7 +15,7 @@ describe('Endpoints', function(){
             done()
         });
     })
-    
+
     it('test status code', function(done){
         request('http://localhost:7865/cart/3', function (error, response, body) {
             assert.equal(response.statusCode, 200)
@@ -32,6 +32,13 @@ describe('Endpoints', function(){
 
     it('test status code', function(done){
         request('http://localhost:7865/cart/rr', function (error, response, body) {
+            assert.equal(response.statusCode, 404)
+            done()
+        });
+    })
+
+    it('test status code', function(done){
+        request('http://localhost:7865/cart/-3', function (error, response, body) {
             assert.equal(response.statusCode, 404)
             done()
         });
